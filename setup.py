@@ -11,7 +11,7 @@ def read(fname):
     return codecs.open(file_path, encoding='utf-8').read()
 
 setup(
-    name='jinja2-time',
+    name='jinja2-strcase',
     version='0.0.1',
     author='Marek Chmiel',
     maintainer='Marek Chmiel',
