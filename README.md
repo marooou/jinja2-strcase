@@ -4,6 +4,14 @@ A python package for converting string case in jinja2 templates (including cooki
 
 It is a port of the go package [strcase](https://github.com/iancoleman/strcase)
 
+## Installation
+
+jinja2-strcase is available for download from PyPI via pip:
+
+```
+$ pip install jinja2-strcase
+```
+
 ## Example
 
 ```
