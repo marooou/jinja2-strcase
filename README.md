@@ -20,7 +20,7 @@ from jinja2 import Environment
 env = Environment(extensions=['jinja2_strcase.StrcaseExtension'])
 
 # This will convert 'Any kind of string' -> 'any_kind_of_string'
-template = env.from_string("{% 'Any kind of string' |  to_snake }")
+template = env.from_string("{{ 'Any kind of string' |  to_snake }}")
 
 template.render()
 ```
