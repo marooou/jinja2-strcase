@@ -21,9 +21,9 @@ setup(
     long_description=read('README.md'),
     long_description_content_type="text/markdown",
     packages=[
-        'jinja2-strcase',
+        'jinja2_strcase',
     ],
-    package_dir={'jinja2-strcase': 'jinja2-strcase'},
+    package_dir={'jinja2_strcase': 'jinja2_strcase'},
     include_package_data=True,
     zip_safe=False,
     install_requires=[
