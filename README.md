@@ -1,5 +1,7 @@
 # jinja2-strcase
 
+[![PyPI version](https://badge.fury.io/py/jinja2-strcase.svg)](https://badge.fury.io/py/jinja2-strcase)
+
 A python package for converting string case in jinja2 templates (including cookiecutter).
 
 It is a port of the go package [strcase](https://github.com/iancoleman/strcase)
