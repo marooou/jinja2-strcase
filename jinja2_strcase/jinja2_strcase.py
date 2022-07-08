@@ -101,3 +101,17 @@ class StrcaseExtension(Extension):
         environment.filters['to_screaming_snake'] = to_screaming_snake
         environment.filters['to_delimited'] = to_delimited
         environment.filters['to_screaming_delimited'] = to_screaming_delimited
+
+# needed for use as an ansible filter
+class FilterModule(object):
+    def filters(self):
+        return {
+            'to_camel': to_camel,
+            'to_lower_camel': to_lower_camel,
+            'to_kebab': to_kebab,
+            'to_screaming_kebab': to_screaming_kebab,
+            'to_snake': to_snake,
+            'to_screaming_snake': to_screaming_snake,
+            'to_delimited': to_delimited,
+            'to_screaming_delimited': to_screaming_delimited,
+        }
