@@ -88,6 +88,18 @@ def to_screaming_snake(string):
 def to_screaming_delimited(string, delimiter):
     return _to_screaming_delimited(string, delimiter, True)
 
+def to_sentence_lower(string):
+    return _to_screaming_delimited(string, ' ', False)
+
+def to_sentence(string):
+    return _to_screaming_delimited(string, ' ', False).capitalize()
+
+def to_title(string):
+    return _to_screaming_delimited(string, ' ', False).title()
+
+def to_sentence_upper(string):
+    return _to_screaming_delimited(string, ' ', True)
+
 class StrcaseExtension(Extension):
     """A python package for converting string case in jinja2 templates."""
 
@@ -101,3 +113,7 @@ class StrcaseExtension(Extension):
         environment.filters['to_screaming_snake'] = to_screaming_snake
         environment.filters['to_delimited'] = to_delimited
         environment.filters['to_screaming_delimited'] = to_screaming_delimited
+        environment.filters['to_sentence_lower'] = to_sentence_lower
+        environment.filters['to_sentence'] = to_sentence
+        environment.filters['to_title'] = to_title
+        environment.filters['to_sentence_upper'] = to_sentence_upper
