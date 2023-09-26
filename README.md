@@ -35,3 +35,7 @@ template.render()
 | `to_screaming_kebab`            | `ANY-KIND-OF-STRING` |
 | `to_camel`                      | `AnyKindOfString`    |
 | `to_lower_camel`                | `anyKindOfString`    |
+| `to_sentence_lower`             | `any kind of string` |
+| `to_sentence`                   | `Any kind of string` |
+| `to_title`                      | `Any Kind Of String` |
+| `to_sentence_upper`             | `ANY KIND OF STRING` |
